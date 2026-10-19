@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 // Serve the frontend from the same server (one deployment)
-app.use(express.static(path.join(__dirname, '..', 'frontend')));
+app.use(express.static(path.join(__dirname, 'frontend')));
 
 const FIELDS = ['destination', 'country', 'category', 'best_season', 'avg_cost_usd', 'rating', 'description'];
 
